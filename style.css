@@ -1,0 +1,115 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 255, 212);
+}
+
+header {
+    background-color: rgb(39, 101, 0);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .site-name {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #daf9d0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-section {
+    background-color: rgb(212, 251, 184);
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #01230c;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.testimonials-section {
+    background-color: #e1ffe0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.testimonials-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.testimonials-section ul {
+    list-style: disc inside;
+    padding-left: 0;
+}
+
+footer {
+    background-color: #0b7705;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    header nav li {
+        margin-bottom: 10px;
+    }
+}
